@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>June Roh | Medical Sciences Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+        html { scroll-behavior: smooth; }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+        .stagger-1 { animation-delay: 0.1s; }
+        .stagger-2 { animation-delay: 0.2s; }
+        .stagger-3 { animation-delay: 0.3s; }
+
+        .hover-lift {
+            transition: transform 0.2s ease-out;
+        }
+        .hover-lift:hover {
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-900 bg-white">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="font-semibold tracking-tight text-gray-900">June Roh</span>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-gray-500">
+                <a href="#hero" class="hover:text-blue-600 transition-colors">Home</a>
+                <a href="#project" class="hover:text-blue-600 transition-colors">Research</a>
+                <a href="#skills" class="hover:text-blue-600 transition-colors">Artifacts</a>
+                <a href="#deliverables" class="hover:text-blue-600 transition-colors">Deliverables</a>
+                <a href="#reflection" class="hover:text-blue-600 transition-colors">Reflection</a>
+            </div>
+            <a href="#contact" class="bg-gray-900 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors">
+                Get in touch
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="pt-32 pb-20 px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="max-w-3xl animate-fade-in">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-xs font-semibold mb-6 uppercase tracking-wider">
+                        <i data-lucide="microscope" size="12"></i>
+                        Researcher at Princess Margaret Cancer Centre
+                    </div>
+                    <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-gray-900 mb-6">
+                        June Roh.
+                    </h1>
+                    <p class="text-xl text-gray-600 leading-relaxed mb-10">
+                        I am a 4th-year Medical Sciences student at Western University, 
+                        dedicated to bridging clinical practice with molecular diagnostics through 
+                        translational oncology research.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://www.uhn.ca/PrincessMargaret" target="_blank" rel="noreferrer" class="flex items-center gap-2 text-sm font-medium text-gray-900 border border-gray-200 px-5 py-2.5 rounded-full hover:bg-gray-50 transition-colors">
+                            Princess Margaret Cancer Centre <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                        </a>
+                        <a href="https://www.uwo.ca/" target="_blank" rel="noreferrer" class="flex items-center gap-2 text-sm font-medium text-gray-900 border border-gray-200 px-5 py-2.5 rounded-full hover:bg-gray-50 transition-colors">
+                            Western University <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The B-FIRST Study -->
+        <section id="project" class="py-24 px-6 bg-gray-50">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid lg:grid-cols-2 gap-16 items-start">
+                    <div>
+                        <div class="mb-12">
+                            <h2 class="text-3xl font-semibold tracking-tight text-gray-900 mb-2">The B-FIRST Study</h2>
+                            <p class="text-gray-500 font-medium">Evaluating the clinical utility of longitudinal structural variant tracking in metastatic breast cancer</p>
+                            <div class="h-1 w-12 bg-blue-600 mt-4"></div>
+                        </div>
+                        <div class="space-y-6 text-gray-600 leading-relaxed font-sans">
+                            <p>
+                                The B-FIRST Study evaluates the clinical utility of longitudinal structural variant (SV) tracking in metastatic breast cancer. Using a tumor-informed digital PCR workflow, we achieved a sensitivity of 94% and a negative predictive value of 98% for detecting radiographic progression.
+                            </p>
+                            <p>
+                                This research highlights how molecular signals can provide a significant "lead time" advantage, identifying therapeutic failure weeks before it appears on a standard CT scan. Structural variants (SVs), large-scale genomic rearrangements, serve as highly specific trackers for longitudinal monitoring.
+                            </p>
+                            <div class="grid grid-cols-2 gap-4 mt-8">
+                                <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
+                                    <div class="text-3xl font-bold text-blue-600 mb-1">94%</div>
+                                    <div class="text-xs font-semibold text-gray-400 uppercase tracking-widest">Sensitivity</div>
+                                </div>
+                                <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
+                                    <div class="text-3xl font-bold text-blue-600 mb-1">98%</div>
+                                    <div class="text-xs font-semibold text-gray-400 uppercase tracking-widest">NPV</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-xl relative z-10">
+                            <div class="flex items-center gap-2 mb-6 text-blue-600">
+                                <i data-lucide="dna" class="w-6 h-6"></i>
+                                <span class="font-mono text-sm text-gray-400 uppercase tracking-wider">Research Framework</span>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-4 text-gray-900">Clinical-Molecular Concordance</h3>
+                            <p class="text-sm text-gray-500 mb-8 leading-relaxed">
+                                Our analysis demonstrated that longitudinal SV monitoring provides a highly accurate reflection 
+                                of clinical treatment response and disease progression, often preceding radiological evidence.
+                            </p>
+                            <ul class="space-y-4">
+                                <li class="flex items-center gap-3 text-sm text-gray-700">
+                                    <div class="w-1.5 h-1.5 rounded-full bg-blue-600"></div>
+                                    Identification of private SVs for personalized tracking
+                                </li>
+                                <li class="flex items-center gap-3 text-sm text-gray-700">
+                                    <div class="w-1.5 h-1.5 rounded-full bg-blue-600"></div>
+                                    Correlation with RECIST radiological findings
+                                </li>
+                                <li class="flex items-center gap-3 text-sm text-gray-700">
+                                    <div class="w-1.5 h-1.5 rounded-full bg-blue-600"></div>
+                                    Automated bioinformatic pipeline for SV detection
+                                </li>
+                                <li class="flex items-center gap-3 text-sm text-gray-700">
+                                    <div class="w-1.5 h-1.5 rounded-full bg-blue-600"></div>
+                                    Detection of low Allele Frequency (AF) variants
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="absolute -z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-blue-200/20 blur-3xl rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Artifacts -->
+        <section id="skills" class="py-24 px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="mb-12">
+                    <h2 class="text-3xl font-semibold tracking-tight text-gray-900 mb-2">Skills & Artifacts</h2>
+                    <p class="text-gray-500 font-medium">Technical expertise at the intersection of biology and informatics</p>
+                    <div class="h-1 w-12 bg-blue-600 mt-4"></div>
+                </div>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- Artifact 1 -->
+                    <div class="p-6 rounded-2xl bg-gray-50 border border-gray-100 flex flex-col h-full hover-lift">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="p-2 bg-white rounded-lg border border-gray-100 shadow-sm text-blue-600">
+                                <i data-lucide="bar-chart-3" class="w-5 h-5"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-900">Technical Proficiency</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">Advanced statistical analysis using R (v4.3.1), specifically for generating longitudinal kinetic plots and confusion matrices.</p>
+                        <div class="flex flex-wrap gap-2 text-[10px] font-mono text-gray-500 uppercase tracking-wider">
+                            <span class="px-2 py-1 bg-white border border-gray-100 rounded">R v4.3.1</span>
+                            <span class="px-2 py-1 bg-white border border-gray-100 rounded">Tidyverse</span>
+                            <span class="px-2 py-1 bg-white border border-gray-100 rounded">ggplot2</span>
+                        </div>
+                    </div>
+                    <!-- Artifact 2 -->
+                    <div class="p-6 rounded-2xl bg-gray-50 border border-gray-100 flex flex-col h-full hover-lift">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="p-2 bg-white rounded-lg border border-gray-100 shadow-sm text-blue-600">
+                                <i data-lucide="database" class="w-5 h-5"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-900">Clinical Integration</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">Bridging the gap between raw genomic data (TGC/mL) and clinical milestones (RECIST 1.1).</p>
+                        <div class="flex flex-wrap gap-2 text-[10px] font-mono text-gray-500 uppercase tracking-wider">
+                            <span class="px-2 py-1 bg-white border border-gray-100 rounded">Clinical Milestones</span>
+                            <span class="px-2 py-1 bg-white border border-gray-100 rounded">RECIST 1.1</span>
+                        </div>
+                    </div>
+                    <!-- Artifact 3 -->
+                    <div class="p-6 rounded-2xl bg-gray-50 border border-gray-100 flex flex-col h-full hover-lift">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="p-2 bg-white rounded-lg border border-gray-100 shadow-sm text-blue-600">
+                                <i data-lucide="microscope" class="w-5 h-5"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-900">Research Artifacts</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">Access to the standardized bioinformatic workflows and R-code appendix used for clinical-molecular concordance evaluation.</p>
+                        <div class="flex flex-wrap gap-2 text-[10px] font-mono text-gray-500 uppercase tracking-wider">
+                            <span class="px-2 py-1 bg-white border border-gray-100 rounded">Bioinformatics</span>
+                            <span class="px-2 py-1 bg-white border border-gray-100 rounded">Analysis Scripts</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deliverables -->
+        <section id="deliverables" class="py-24 px-6 bg-blue-900 text-white">
+            <div class="max-w-6xl mx-auto">
+                <div class="mb-12">
+                    <h2 class="text-3xl font-semibold tracking-tight text-white mb-2">Research Deliverables</h2>
+                    <p class="text-blue-200 font-medium tracking-wide border-l-2 border-blue-400 pl-4 py-1">Official publications and presentations from the B-FIRST study</p>
+                </div>
+                
+                <div class="grid lg:grid-cols-3 gap-12">
+                    <!-- Poster Embedding -->
+                    <div class="lg:col-span-2 space-y-4">
+                        <div class="relative aspect-video w-full bg-blue-800 rounded-2xl overflow-hidden border border-blue-700 shadow-2xl">
+                            <iframe 
+                                src="https://drive.google.com/file/d/1pgem5AxKoMulb_Q-NvDZZA7Pu5nNsvb3/preview" 
+                                class="absolute inset-0 w-full h-full border-0"
+                                allow="autoplay">
+                            </iframe>
+                        </div>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-blue-200 font-medium italic">SABCS 2025 Poster Presentation</span>
+                            <a href="https://drive.google.com/file/d/1pgem5AxKoMulb_Q-NvDZZA7Pu5nNsvb3/view?usp=sharing" target="_blank" rel="noreferrer" class="text-white hover:text-blue-300 flex items-center gap-1 transition-colors">
+                                View Full Screen <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Action Cards -->
+                    <div class="flex flex-col gap-6">
+                        <div class="bg-blue-800/50 p-8 rounded-3xl border border-blue-700">
+                            <div class="bg-blue-600 w-12 h-12 rounded-xl flex items-center justify-center mb-6 text-white">
+                                <i data-lucide="file-text" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3">Full Written Paper</h3>
+                            <p class="text-blue-100/80 text-sm leading-relaxed mb-8">
+                                Comprehensive study detail encompassing patient cohorts, bioinformatic methodologies, and molecular-clinical correlation analysis.
+                            </p>
+                            <a href="https://drive.google.com/file/d/17qi_mEYkk397WipMAiCcWwlI11TIozZ2/view?usp=sharing" target="_blank" rel="noreferrer" class="inline-flex items-center justify-center w-full bg-white text-blue-900 font-bold py-3 px-6 rounded-xl hover:bg-blue-50 transition-colors">
+                                Download Full Paper
+                            </a>
+                        </div>
+
+                        <div class="bg-blue-800/50 p-8 rounded-3xl border border-blue-700">
+                            <div class="bg-blue-600 w-12 h-12 rounded-xl flex items-center justify-center mb-6 text-white">
+                                <i data-lucide="external-link" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3">SABCS Abstract</h3>
+                            <p class="text-blue-100/80 text-sm leading-relaxed mb-8">
+                                Official conference abstract published in Clinical Cancer Research.
+                            </p>
+                            <a href="https://aacrjournals.org/clincancerres/article/32/4_Supplement/PS2-07-08/773231/Abstract-PS2-07-08-Longitudinal-ctDNA-Tracking-in" target="_blank" rel="noreferrer" class="inline-flex items-center justify-center w-full border border-blue-400 text-white font-bold py-3 px-6 rounded-xl hover:bg-blue-800/80 transition-colors">
+                                View Online Abstract
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reflective Synthesis -->
+        <section id="reflection" class="py-24 px-6 bg-gray-50 border-y border-gray-100">
+            <div class="max-w-6xl mx-auto">
+                <div class="mb-12">
+                    <h2 class="text-3xl font-semibold tracking-tight text-gray-900 mb-2">Reflective Synthesis</h2>
+                    <p class="text-gray-500 font-medium">A continuous journey of learning and discovery</p>
+                    <div class="h-1 w-12 bg-blue-600 mt-4"></div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Card 1 -->
+                    <div class="flex gap-6 p-6 rounded-2xl border border-gray-100 bg-white hover:bg-gray-50 transition-colors duration-200">
+                        <div class="flex-shrink-0">
+                            <div class="p-3 bg-blue-50 text-blue-600 rounded-xl">
+                                <i data-lucide="target" class="w-6 h-6"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">What went well?</h4>
+                            <p class="text-gray-600 leading-relaxed text-sm">The high concordance (94% sensitivity) between our molecular assay and radiographic progression was a major success, proving that patient-specific SVs are robust biomarkers resistant to biological noise like clonal hematopoiesis.</p>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="flex gap-6 p-6 rounded-2xl border border-gray-100 bg-white hover:bg-gray-50 transition-colors duration-200">
+                        <div class="flex-shrink-0">
+                            <div class="p-3 bg-blue-50 text-blue-600 rounded-xl">
+                                <i data-lucide="lightbulb" class="w-6 h-6"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">What would I change?</h4>
+                            <p class="text-gray-600 leading-relaxed text-sm">If I were to repeat this project, I would expand the cohort size and investigate a 'plasma-informed' workflow to see if we can generate these panels without needing archival tissue, which is sometimes unavailable.</p>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="flex gap-6 p-6 rounded-2xl border border-gray-100 bg-white hover:bg-gray-50 transition-colors duration-200">
+                        <div class="flex-shrink-0">
+                            <div class="p-3 bg-blue-50 text-blue-600 rounded-xl">
+                                <i data-lucide="alert-circle" class="w-6 h-6"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Outstanding Gaps?</h4>
+                            <p class="text-gray-600 leading-relaxed text-sm">A key gap remains in understanding the biological mechanisms behind a ctDNA rise. While we can see the tumor is growing, our current assay doesn't tell us why (e.g., a specific new mutation).</p>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="flex gap-6 p-6 rounded-2xl border border-gray-100 bg-white hover:bg-gray-50 transition-colors duration-200">
+                        <div class="flex-shrink-0">
+                            <div class="p-3 bg-blue-50 text-blue-600 rounded-xl">
+                                <i data-lucide="trending-up" class="w-6 h-6"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Next Steps?</h4>
+                            <p class="text-gray-600 leading-relaxed text-sm">The logical next step is a prospective interventional trial, where clinical decisions, like switching a treatment, are made based on the molecular rise rather than waiting for the scan to fail.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact/Footer -->
+        <footer id="contact" class="py-24 px-6">
+            <div class="max-w-6xl mx-auto flex flex-col items-center text-center">
+                <h2 class="text-4xl font-bold mb-8">Let's connect.</h2>
+                <div class="flex flex-wrap justify-center gap-4 mb-12">
+                    <a href="mailto:jroh9@uwo.ca" class="flex items-center gap-2 px-8 py-4 rounded-full bg-gray-900 text-white hover:bg-gray-800 transition-all transform hover:scale-105 shadow-xl">
+                        <i data-lucide="mail" class="w-5 h-5"></i>
+                        <span>Email me</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/june-roh/?skipRedirect=true" target="_blank" rel="noreferrer" class="flex items-center gap-2 px-8 py-4 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-all transform hover:scale-105 shadow-xl">
+                        <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+                <div class="w-full pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 gap-4">
+                    <p>&copy; 2024 June Roh. All rights reserved.</p>
+                    <div class="flex gap-6">
+                        <span>Medical Sciences, Western University</span>
+                        <span>Princess Margaret Cancer Centre</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
